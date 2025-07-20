@@ -67,12 +67,6 @@ const JsonSchemaBuilder: React.FC= () => {
   const properties  =watch("properties") || [];
   const onSubmit = (data: FormData) => {
    
-
-
-    {Object.keys(schema).length > 0
-          ? JSON.stringify(schema, null, 2)
-          : "No properties added"}
-
     console.log(data);       
   };
 
@@ -173,7 +167,7 @@ const JsonSchemaBuilder: React.FC= () => {
       </div>
 
       {/* json displaced here */}
-      <div id="json-display" className="flex-1 mt-4 bg-gray-100 p-4 whitespace-pre-wrap font-mono min-w-[200px] min-h-[200px]"
+      <div id="json-display" className="flex-1 mt-4 bg-gray-100 p-4 whitespace-pre-wrap font-mono max-w-[500px] min-h-[200px]"
         >
 
       

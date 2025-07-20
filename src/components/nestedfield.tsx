@@ -18,7 +18,7 @@ const NestedFields: React.FC<{
 
   const { fields, append, remove } = useFieldArray({
     control,
-    // @ts-ignore
+    
     name: `properties.${nestIndex}.properties `,
   });
 
@@ -65,9 +65,7 @@ const NestedFields: React.FC<{
                     onPressedChange={(pressed) =>
                       setValue(`properties.${index}.required`, pressed)
                     }
-                    className={`
-                                
-                                `} 
+                    
 
                   >
                     {watch(`properties.${index}.required`) ? <ToggleLeft size={20} /> : <ToggleRight size={20} />}
